@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda Telefônica</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nome" maxlength="50" required>
+            <input type="text" id="phone" placeholder="Telefone" maxlength="15" required>
+            <button type="button" onclick="addContact()">Adicionar</button>
+        </form>
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <!-- Rodapé fora do contêiner principal -->
+    <footer>
+        Desenvolvido por Edson Rocha - 2024
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

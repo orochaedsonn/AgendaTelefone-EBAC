@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração da área de visualização */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F2EDE4;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do cabeçalho */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #202022;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #CACACA;
+  border-radius: 4px;
+  color: #202022;
+  background-color: #F2EDE4;
+}
+
+input[type="text"]::placeholder {
+  color: #CACACA;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #00747C;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00BBC9;
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #CACACA;
+  color: #202022;
+}
+
+th {
+  background-color: #00747C;
+  color: #F2EDE4;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  input[type="text"], button {
+      font-size: 14px;
+  }
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #CACACA;
+  background-color: #202022;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
